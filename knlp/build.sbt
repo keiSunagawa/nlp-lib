@@ -9,7 +9,9 @@ lazy val root = (project in file("."))
   .settings(
     name := "knlp",
     libraryDependencies += scalaTest % Test,
-    libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.9.2"
+    libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.9.2",
+    libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.9.2" classifier "models",
+    libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.9.2" classifier "models-english"
   )
 
 // Uncomment the following for publishing to Sonatype.
